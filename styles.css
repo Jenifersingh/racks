@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FAFBFF;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.navigations {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-items {
+    padding: 4px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.active-nav-item {
+    background-color: #000000;
+    color: #fff;
+}
+
+.nav-items:hover {
+    background-color: #cecaca;
+    /* color: #fff; */
+}
+
+.main {
+    background-image: url("./assets/img1.jpeg");
+    height: 800px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: rgb(255, 255, 255); */
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #fff;
+}
+
+.main::before > div {
+    z-index: 10;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    width: 600px;
+    padding-right: 50px;
+}
+
+.heading {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: right;
+}
+
+
+.section-items-heading {
+    font-size: 30px;
+    text-align: center;
+    padding: 60px;
+    font-weight: bold;
+}
+
+.section-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.section-item {
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 5px 10px 1px #d0cece;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.section-heading {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding-inline: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.section-description {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+}
